@@ -1,0 +1,68 @@
+@import "./assets/styles/mixins.scss";
+
+.App {
+  text-align: center;
+
+  .page__bd_spacing {
+    padding: 3rem 2rem 2rem;
+  }
+  .weui-icon-waiting {
+    color: var(--weui-ORANGE);
+  }
+  .icon-box {
+    padding-bottom: 2.6rem;
+    .weui-icon_msg {
+      width: 5rem;
+      height: 5rem;
+    }
+    .icon-box__title {
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 2.6em;
+    }
+    .icon-box__desc {
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+  }
+  .weui-form-preview {
+    &::after {
+      display: none;
+    }
+  }
+  .weui-form-preview__bd {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 4rem;
+  }
+
+  .weui-form-preview__ft {
+    .pay-btn {
+      flex: 1;
+      color: #ffffff;
+      border-radius: 5px;
+      line-height: 2.2rem;
+      font-size: 1.4rem;
+      letter-spacing: 0.1rem;
+      border: 0;
+      outline: 0;
+
+      &.weui-btn_warn {
+        color: var(--weui-RED);
+      }
+    }
+  }
+  .weui-loadmore {
+    .weui-loading {
+      width: 1.4rem;
+      height: 1.4rem;
+    }
+    .weui-loadmore__tips {
+      font-size: 1rem;
+    }
+  }
+
+  .weui-btn {
+    @include noselect;
+  }
+}
